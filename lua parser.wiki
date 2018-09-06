@@ -1,0 +1,51 @@
+= lua interpreter =
+
+解析器是parser 广义的解析器里一般会有扫描器（scanner，也叫tokenizer或者lexical analyzer，词法分析器），以及狭义的解析器（parser，也叫syntax analyzer，语法分析器）。扫描器的输入一般是文本，经过词法分析，输出是将文本切割为单词的流。狭义的解析器输入是单词的流，经过语法分析，输出是语法树或者精简过的AST。
+
+== Abstract Syntax Tree ==
+
+= waf 检测条件对象 =
+
+检测条件的字段：
+URI 路径及参数
+URI-path 路径
+Parameter key-value对象 参数
+Parameter-name 参数名
+Cookie key-value对象
+Cookie-name
+Protocol 协议
+Version 版本
+Method 方法
+Header 请求头 key-value
+Header-name 请求头名称
+User-Agent
+Host
+Refer
+Accept-Encoding
+Accept-Language
+Accept-Charset
+BODY 内容
+Response Code
+Content Length
+Content-Type
+Response BODY
+File Type
+IP
+Port 端口
+
+= 检测操作 =
+eq    equal
+neq   not equal
+co    contain
+nco   not contain
+req   regular expression equal
+nreq  regular expression not equal
+rco   regular expression contain
+nrco  regular expression not contain
+ex    exists
+nex   exists
+in    one of
+type  type
+betw  between
+lbetw Length between
+cbetw count between

@@ -1,0 +1,17 @@
+`
+grep -Rn "shell_exec *(" /var/www
+grep -Rn "base64_decode *(" /var/www
+grep -Rn "phpinfo *(" /var/www
+grep -Rn "system *(" /var/www
+grep -Rn "php_uname *(" /var/www
+grep -Rn "chmod *(" /var/www
+grep -Rn "fopen *(" /var/www
+grep -Rn "fclose *(" /var/www
+grep -Rn "readfile *(" /var/www
+grep -Rn "edoced_46esab *(" /var/www
+grep -Rn "eval *(" /var/www
+grep -Rn "pwd" /var/www
+grep -Rn "pass" /var/www
+grep -Rn "pw" /var/www
+grep -Rn 密码" /var/www
+`
